@@ -5,6 +5,11 @@ from BegginerGuide.application02 import class_names
 
 
 def plot_image(i, predictions_array, true_label, img):
+    """Recebe a posição do array da imagem correta (i)
+    Recebe o array das imagens preditas (predictions_array)
+    Recebe o array de Labels correto (true_label)
+    Recebe o array de imagens original (img)
+    """
     predictions_array, true_label, img = predictions_array, true_label[i], img[i]
     plt.grid(False)
     plt.xticks([])
