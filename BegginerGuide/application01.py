@@ -36,6 +36,10 @@ model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy', cm.f1_m, cm.recall_m])
 
+
+# Criação do Modelo de Deep Learning, com 5 iteraçoes no dataset de treino
 model.fit(x_train, y_train, epochs=5)
+
+# Avaliação do modelo treinado com os dados separados para teste com versobse=2
 model.evaluate(x_test, y_test, verbose=2)
 
